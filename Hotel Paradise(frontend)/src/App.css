@@ -1,0 +1,300 @@
+/* Efectos para las tarjetas de habitaciones */
+.hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* Estilo para los títulos de sección */
+h2 {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+h2:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #007bff;
+}
+
+/* Navbar personalizado */
+.navbar-brand {
+  font-weight: bold;
+  color: #ffffff !important;
+}
+
+.nav-link {
+  color: #ffffff !important;
+  border-bottom: 3px solid transparent !important;
+}
+
+.nav-link:hover {
+  color: #ffffff !important;
+  border-bottom-color: red !important;
+}
+
+
+/* Personalización del carousel */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 15px;
+}
+
+/* Enlaces del footer */
+footer a {
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffffff !important;
+}
+
+/* Botones con transición suave */
+.btn {
+  transition: all 0.3s ease;
+}
+
+/* Padding para secciones */
+section {
+  padding: 60px 0;
+}
+
+/* Animación de carga */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/*  estilos para el registro  */
+.register {
+  background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+}
+
+.register-left {
+  text-align: center;
+  color: #fff;
+  margin-top: 4%;
+}
+
+.register-left input {
+  border: none;
+  border-radius: 1.5rem;
+  padding: 2%;
+  width: 50%;
+  background: #f8f9fa;
+  font-weight: bold;
+  color: #383d41;
+  margin-top: 30%;
+  margin-bottom: 3%;
+  cursor: pointer;
+}
+
+.register-right {
+  background: #f8f9fa;
+  border-top-left-radius: 10% 50%;
+  border-bottom-left-radius: 10% 50%;
+  padding: 5%;
+}
+
+.register-left img {
+  margin-top: 15%;
+  margin-bottom: 5%;
+  width: 25%;
+  -webkit-animation: mover 2s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+
+.register-left p {
+  font-weight: lighter;
+  padding: 12%;
+  margin-top: -9%;
+}
+
+.register .register-form {
+  padding: 10%;
+  margin-top: 10%;
+}
+
+.btnRegister {
+  float: right;
+  margin-top: 10%;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 2%;
+  background: #0062cc;
+  color: #fff;
+  font-weight: 600;
+  width: 50%;
+  cursor: pointer;
+}
+
+.register .nav-tabs {
+  margin-top: 3%;
+  border: none;
+  background: #0062cc;
+  border-radius: 1.5rem;
+  width: 28%;
+  float: right;
+}
+
+.register .nav-tabs .nav-link {
+  padding: 2%;
+  height: 34px;
+  font-weight: 600;
+  color: #fff;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+.register .nav-tabs .nav-link:hover {
+  border: none;
+}
+
+.register .nav-tabs .nav-link.active {
+  width: 100px;
+  color: #0062cc;
+  border: 2px solid #0062cc;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+
+.register-heading {
+  text-align: center;
+  margin-top: 8%;
+  margin-bottom: -15%;
+  color: #495057;
+}
+
+/* Responsivo: Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .register-left, .register-right {
+      padding: 10%;
+      margin-top: 0;
+  }
+
+  .register-left img {
+      width: 40%;
+  }
+
+  .register-left p {
+      font-size: 14px;
+      padding: 5%;
+      margin-top: 0;
+  }
+
+  .register-form {
+      padding: 10%;
+  }
+
+  .btnRegister {
+      width: 100%;
+      margin-top: 5%;
+  }
+
+  .register-heading {
+      margin-top: 5%;
+      margin-bottom: 10%;
+  }
+}
+
+/* Responsivo: Ajustes para pantallas muy pequeñas */
+@media (max-width: 576px) {
+  .register-left, .register-right {
+      padding: 5%;
+  }
+
+  .register-left img {
+      width: 60%;
+  }
+
+  .register-left p {
+      font-size: 12px;
+      padding: 3%;
+  }
+
+  .register-form {
+      padding: 15%;
+  }
+
+  .btnRegister {
+      width: 100%;
+      margin-top: 3%;
+  }
+
+  .register-heading {
+      margin-top: 3%;
+      margin-bottom: 5%;
+  }
+}
+
+
+/* estilos para login */
+
+.vh-100 {
+  background: linear-gradient(to left, #3931af, #00c6ff);
+}
+
+.animated-logo {
+  margin-top: 2%;
+  margin-bottom: 5%;
+  width: 25%;
+  animation: mover 1s infinite alternate;
+}
+
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+
+.alert {
+  margin-bottom: 15px;
+  border-radius: 1rem;
+}
+
+.form-control {
+  border-radius: 1.5rem;
+  padding: 2%;
+}
+
+.btn-lg {
+  border-radius: 1.5rem;
+  padding: 1% 3%;
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-center a {
+  color: #00c6ff;
+  text-decoration: none;
+}
+
+.text-center a:hover {
+  text-decoration: underline;
+}
